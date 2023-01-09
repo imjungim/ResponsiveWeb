@@ -63,11 +63,17 @@ h6,
 
 /* Header */
 .gnb-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 300;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 72px;
   background-color: white;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
 .gnb {
   display: flex;
@@ -88,7 +94,7 @@ h6,
 }
 
 .menu-button i {
-  font-size: 28px; 
+  font-size: 28px;
   color: #7a6960;
 }
 
@@ -167,8 +173,8 @@ h6,
   width: 100%;
   height: 100vh;
   background-color: rgba(63, 65, 80, 0.5);
-  opacity: 0; 
-  visibility: hidden; 
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
 }
 
@@ -180,11 +186,101 @@ h6,
 .test.active {
   color: #eb5d12;
 }
+
+/* HERO SECTION */
+.hero-section {
+  margin: 72px 0 -72px;
+  padding: 60px 0;
+  background-color: #fef8f5;
+  border-bottom: 2px solid #fcebe3;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.hero-image img {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.hero-group .hero-title {
+  margin-bottom: 15px;
+  line-height: 36px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #4e4039;
+}
+
+.hero-group .hero-desc {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a08f86;
+}
+
+.started-button a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 28px;
+  color: #fff;
+  background-color: #eb5d1e;
+  border-radius: 3px;
+  transition: opacity 300ms ease-in-out;
+}
+
+.started-button a:hover {
+  opacity: 0.4;
+}
+
 /* 반응형 디자인 */
 
 @media screen and (min-width: 992px) {
   .sm-only {
     display: none;
+  }
+
+  /* HERO SECTION */
+
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .hero-group {
+    padding: 0 12px;
+  }
+
+  .hero-group .hero-title {
+    margin-bottom: 15px;
+    line-height: 56px;
+    font-size: 48px;
+  }
+
+  .hero-group .hero-desc {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .hero-image img {
+    padding: 0 12px;
+    animation-name: imageUpDown;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
   }
 }
 
@@ -192,5 +288,14 @@ h6,
   /* 991px 까지 적용 */
   .md-only {
     display: none;
+  }
+}
+
+@keyframes imageUpDown {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
