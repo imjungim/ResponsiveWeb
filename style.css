@@ -272,7 +272,7 @@ h6,
 }
 
 .about-desc {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 16px;
   font-size: 15px;
   color: #5a6570;
@@ -291,13 +291,77 @@ h6,
   color: #7a6960;
 }
 
+/* SERVICE SECTION */
 
+.service-section {
+  padding: 60px 0;
+  background-color: #fef8f5;
+}
 
+.service .service-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1px;
+  margin-bottom: 15px;
+  color: #c2b7b1;
+  text-align: center;
+}
 
+.service p {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #4e4039;
+  text-align: center;
+}
 
+.service p:after {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  bottom: 0;
+  left: calc(50% - 30px);
+  background: #eb5d1e;
+  content: '';
+}
+.service-content {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
+}
 
+.service-content i {
+  font-size: 48px;
+  color: #ef7f4d;
+  margin-bottom: 15px;
+}
 
+.service-content .service-content-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.service-content-description {
+  font-size: 15px;
+  line-height: 28px;
+}
 /* 반응형 디자인 */
+
+@media screen and (min-width: 768px) {
+  /* SERVICE SECTION */
+  .service {
+    padding-bottom: 30px;
+  }
+}
 
 @media screen and (min-width: 992px) {
   .sm-only {
@@ -310,7 +374,7 @@ h6,
     display: flex;
     flex-direction: row-reverse;
   }
-  
+
   .hero-group {
     padding: 0 12px;
   }
@@ -351,6 +415,11 @@ h6,
   .about-group:first-child {
     margin-right: 24px;
   }
+
+  /* SERVICE SECTION */
+  .service-content {
+
+  } 
 }
 
 @media screen and (max-width: 991px) {
