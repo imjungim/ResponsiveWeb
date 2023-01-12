@@ -8,7 +8,10 @@
     <!-- favicon -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./grid.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -457,6 +460,142 @@
         </div>
       </section>
 
+      <section class="clients-section">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="section">
+                <h1 class="section-title">Clients</h1>
+                <p>They trusted us</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="carousel-slider">
+                <ol class="slider-list">
+                  <li class="slider-item">
+                    <figure>
+                      <img src="./assets/img/clients/client-1.png" alt="" />
+                      <figcaption class="visually-hidden">clients 1</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-item">
+                    <figure>
+                      <img src="./assets/img/clients/client-2.png" alt="" />
+                      <figcaption class="visually-hidden">clients 2</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-item">
+                    <figure>
+                      <img src="./assets/img/clients/client-3.png" alt="" />
+                      <figcaption class="visually-hidden">clients 3</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-item">
+                    <figure>
+                      <img src="./assets/img/clients/client-4.png" alt="" />
+                      <figcaption class="visually-hidden">clients 4</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-item">
+                    <figure>
+                      <img src="./assets/img/clients/client-5.png" alt="" />
+                      <figcaption class="visually-hidden">clients 5</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-item">
+                    <figure>
+                      <img src="./assets/img/clients/client-6.png" alt="" />
+                      <figcaption class="visually-hidden">clients 6</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-item">
+                    <figure>
+                      <img src="./assets/img/clients/client-7.png" alt="" />
+                      <figcaption class="visually-hidden">clients 7</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-item">
+                    <figure>
+                      <img src="./assets/img/clients/client-8.png" alt="" />
+                      <figcaption class="visually-hidden">clients 8</figcaption>
+                    </figure>
+                  </li>
+                </ol>
+              </div>
+
+              <div class="carousel-thumbnail">
+                <ol class="thumbnail-list">
+                  <li class="thumbnail-item">
+                    <button type="button">
+                      <img
+                        src="./assets/img/clients/client-1.png"
+                        alt="client-1"
+                      />
+                    </button>
+                  </li>
+                  <li class="thumbnail-item">
+                    <button type="button">
+                      <img
+                        src="./assets/img/clients/client-2.png"
+                        alt="client-2"
+                      />
+                    </button>
+                  </li>
+                  <li class="thumbnail-item">
+                    <button type="button">
+                      <img
+                        src="./assets/img/clients/client-3.png"
+                        alt="client-3"
+                      />
+                    </button>
+                  </li>
+                  <li class="thumbnail-item">
+                    <button type="button">
+                      <img
+                        src="./assets/img/clients/client-4.png"
+                        alt="client-4"
+                      />
+                    </button>
+                  </li>
+                  <li class="thumbnail-item">
+                    <button type="button">
+                      <img
+                        src="./assets/img/clients/client-5.png"
+                        alt="client-5"
+                      />
+                    </button>
+                  </li>
+                  <li class="thumbnail-item">
+                    <button type="button">
+                      <img
+                        src="./assets/img/clients/client-6.png"
+                        alt="client-6"
+                      />
+                    </button>
+                  </li>
+                  <li class="thumbnail-item">
+                    <button type="button">
+                      <img
+                        src="./assets/img/clients/client-7.png"
+                        alt="client-7"
+                      />
+                    </button>
+                  </li>
+                  <li class="thumbnail-item">
+                    <button type="button">
+                      <img
+                        src="./assets/img/clients/client-8.png"
+                        alt="client-8"
+                      />
+                    </button>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="contact-section">
         <div class="container">
           <div class="row">
@@ -473,7 +612,7 @@
                     <i class="fa-solid fa-location-dot"></i>
                     <div class="contact-content">
                       <h4>Location :</h4>
-                      <p>A108 Adam Street, New York, NY 535022</p>
+                      <a href="#">A108 Adam Street, New York, NY 535022</a>
                     </div>
                   </li>
                   <li class="contact-item">
@@ -494,9 +633,7 @@
                   </li>
                 </ul>
 
-                <div>
-                  지도자리
-                </div>
+                <div>지도자리</div>
               </div>
             </div>
           </div>
@@ -532,5 +669,7 @@
     </aside>
 
     <div class="overlay" aria-hidden></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>
