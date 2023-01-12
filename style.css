@@ -460,6 +460,66 @@ h6,
   display: none;
 }
 
+/* FAQ SECTION */
+.faq-section {
+  padding: 60px 0;
+  background-color: #fef8f5;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(234, 231, 229);
+}
+
+.faq-item-button {
+    /* display: flex; */
+  position: relative;
+  color: #343a40;
+  transition: color 300ms ease-in-out;
+}
+
+
+.faq-item-button i {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  font-size: 16px;
+}
+
+.faq-item-button p {
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.faq-item-button.is-active {
+  color: #c54811;
+  transition: transform 300ms ease-in-out;
+}
+
+.faq-item-button.is-active i{
+  padding: 0;
+  top: 5px;
+  margin-bottom: 5px;
+  transform: rotate(-180deg);
+}
+
+.faq-item-content p{
+  padding: 10px 0 0 25px;
+  max-height: 0;
+  font-size: 16px;
+  color: #212529;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out;
+}
+
+.faq-item-content p.is-open {
+  max-height: 500px;
+}
+
+
 /* 반응형 디자인 */
 
 @media screen and (min-width: 768px) {
