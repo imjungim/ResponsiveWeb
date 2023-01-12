@@ -298,7 +298,11 @@ h6,
   background-color: #fef8f5;
 }
 
-.service .service-title {
+.section {
+  padding-bottom: 30px;
+}
+
+.section .section-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 1px;
@@ -307,7 +311,7 @@ h6,
   text-align: center;
 }
 
-.service p {
+.section p {
   position: relative;
   padding-bottom: 15px;
   margin-bottom: 15px;
@@ -317,7 +321,7 @@ h6,
   text-align: center;
 }
 
-.service p:after {
+.section p:after {
   position: absolute;
   display: block;
   width: 60px;
@@ -327,6 +331,7 @@ h6,
   background: #eb5d1e;
   content: '';
 }
+
 .service-content {
   position: relative;
   overflow: hidden;
@@ -354,6 +359,107 @@ h6,
   font-size: 15px;
   line-height: 28px;
 }
+
+/* PORTFOLIO SECTION */
+.portfolio {
+  padding-bottom: 30px;
+}
+
+.portfolio-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.portfolio p:after {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  bottom: 0;
+  left: calc(50% - 30px);
+  background: #eb5d1e;
+  content: '';
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.portfolio-list .portfolio-item {
+  padding: 5px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #212529;
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
+}
+
+.portfolio-list .portfolio-item:hover {
+  color: #eb5d12;
+}
+
+.portfolio-image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.portfolio-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.overlay-portfolio {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  background-color: rgba(122, 105, 96, 0.6);
+  visibility: hidden;
+  border-radius: 8px;
+}
+
+.overlay-portfolio.is-active {
+  visibility: visible;
+  animation-name: overlayMove;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+
+.overlay-portfolio i {
+  padding: 5px 6px;
+  font-size: 13px;
+  color: #eb5d12;
+  background-color: #fff;
+  border-radius: 90%;
+}
+
+.overlay-portfolio i:last-child {
+  padding: 6px;
+  margin-left: 10px;
+  font-size: 11px;
+}
+
+/* tab click시 해당 아이템만 보이도록 */
+.portfolio-image.hide {
+  display: none;
+}
+
 /* 반응형 디자인 */
 
 @media screen and (min-width: 768px) {
@@ -415,11 +521,6 @@ h6,
   .about-group:first-child {
     margin-right: 24px;
   }
-
-  /* SERVICE SECTION */
-  .service-content {
-
-  } 
 }
 
 @media screen and (max-width: 991px) {
@@ -429,11 +530,24 @@ h6,
   }
 }
 
+/* animation */
 @keyframes imageUpDown {
   0% {
     transform: translateY(10px);
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes overlayMove {
+  0% {
+    transform: translateX(510px);
+  }
+  90% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
