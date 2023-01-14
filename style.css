@@ -602,6 +602,19 @@ h6,
   padding: 60px 0;
 }
 
+.contact {
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  border-top: 3px solid #eb5d12;
+  border-bottom: 3px solid #eb5d12;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
+
+.contact:first-child {
+  margin-bottom: 50px;
+}
+
 .contact-list .contact-item {
   display: flex;
 }
@@ -631,6 +644,41 @@ h6,
   margin-bottom: 20px;
   font-size: 14px;
   color: #ab9d95;
+}
+
+.contact-form-group {
+  width: 100%;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+}
+
+.contact-form-group input {
+  display: block;
+  width: 100%;
+  height: 44px;
+  padding: 6px 12px;
+  border: 1px solid #ced4da;
+}
+
+.contact-form-group textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ced4da;
+}
+
+.send-button {
+  text-align: center;
+}
+.send-button button {
+  padding: 10px 24px;
+  color: #fff;
+  background-color: #eb5d1e;
+  border-radius: 4px;
+  transition: opacity 200ms ease-in-out;
+}
+
+.send-button button:hover {
+  opacity: 0.8;
 }
 
 /* FOOTER */
@@ -779,7 +827,7 @@ h6,
 
 .copyright p:first-child {
   padding: 3px 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 }
 
@@ -791,7 +839,6 @@ h6,
 .copyright p:last-child {
   padding-top: 3px;
   font-size: 12px;
-
 }
 /* 반응형 디자인 */
 
@@ -799,6 +846,15 @@ h6,
   /* SERVICE SECTION */
   .service {
     padding-bottom: 30px;
+  }
+
+  /* CONTACT SECTION */
+  .contact-input-flex {
+    display: flex;
+  }
+
+  .contact-form-group:first-child {
+    margin-right: 24px;
   }
 }
 
