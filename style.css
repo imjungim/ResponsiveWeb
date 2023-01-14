@@ -684,7 +684,7 @@ h6,
 /* FOOTER */
 
 .global-footer-header {
-  padding: 60px 0 30px;
+  padding: 50px 0;
   background-color: #fef8f5;
 }
 
@@ -840,6 +840,7 @@ h6,
   padding-top: 3px;
   font-size: 12px;
 }
+
 /* 반응형 디자인 */
 
 @media screen and (min-width: 768px) {
