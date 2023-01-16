@@ -841,6 +841,25 @@ h6,
   font-size: 12px;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #eb5d1e;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.back-to-top i {
+  padding-top: 1px;
+  font-size: 15px;
+  color: #fff;
+}
 /* 반응형 디자인 */
 
 @media screen and (min-width: 768px) {
@@ -917,6 +936,24 @@ h6,
   /* 991px 까지 적용 */
   .md-only {
     display: none;
+  }
+
+  .back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    right: 15px;
+
+    background-color: #eb5d1e;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+
+  .back-to-top i {
+    font-size: 13px;
+    color: #fff;
   }
 }
 
