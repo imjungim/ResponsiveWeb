@@ -1,8 +1,6 @@
-const menuButton = document.querySelector('.menu-button');
-const sideBar = document.querySelector('.sidebar');
-const sideBarOverlay = document.querySelector('.overlay');
-console.log(sideBarOverlay)
-
+const menuButton = document.querySelector('.menu-button')
+const sideBar = document.querySelector('.sidebar')
+const sideBarOverlay = document.querySelector('.overlay')
 
 function sideBarOpen() {
   sideBar.classList.add('is-active')
