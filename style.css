@@ -435,11 +435,11 @@ h6,
   border-radius: 8px;
 }
 
-.overlay-portfolio.is-active {
+.portfolio-image:hover .overlay-portfolio {
   visibility: visible;
   animation-name: overlayMove;
-  animation-duration: 300ms;
-  animation-timing-function: ease-out;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
   animation-direction: alternate;
 }
 
@@ -486,6 +486,7 @@ h6,
   top: 2px;
   left: 0;
   font-size: 16px;
+  transition: transform 300ms ease-in-out;
 }
 
 .faq-item-button p {
@@ -497,7 +498,6 @@ h6,
 
 .faq-item-button.is-active {
   color: #c54811;
-  transition: transform 300ms ease-in-out;
 }
 
 .faq-item-button.is-active i {
@@ -507,16 +507,20 @@ h6,
   transform: rotate(-180deg);
 }
 
-.faq-item-content p {
-  padding: 10px 0 0 25px;
+.faq-item-content {
+  padding: 10px 0 0 0;
   max-height: 0;
-  font-size: 16px;
-  color: #212529;
   overflow: hidden;
   transition: max-height 300ms ease-in-out;
 }
 
-.faq-item-content p.is-open {
+.faq-item-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #212529;
+}
+
+.faq-item-button.is-active .faq-item-content {
   max-height: 500px;
 }
 
