@@ -402,10 +402,6 @@ h6,
   transition: color 200ms ease-in-out;
 }
 
-.portfolio-list .portfolio-item:hover {
-  color: #eb5d12;
-}
-
 .portfolio-image {
   position: relative;
   overflow: hidden;
@@ -458,7 +454,12 @@ h6,
 }
 
 /* tab click시 해당 아이템만 보이도록 */
-.portfolio-image.hide {
+
+.portfolio-list .portfolio-item.is-on {
+  color: #eb5d12;
+}
+
+.hide {
   display: none;
 }
 
@@ -475,7 +476,6 @@ h6,
 }
 
 .faq-item-button {
-  /* display: flex; */
   position: relative;
   color: #343a40;
   transition: color 300ms ease-in-out;
@@ -933,6 +933,12 @@ h6,
 
   .about-group:first-child {
     margin-right: 24px;
+  }
+
+  /* PORTFOLIO SECTION */
+
+  .portfolio-list .portfolio-item:focus {
+    color: #eb5d12;
   }
 }
 
