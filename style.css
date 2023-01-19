@@ -852,17 +852,27 @@ h6,
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 
   background-color: #eb5d1e;
   width: 40px;
   height: 40px;
   border-radius: 4px;
+  transition: opacity 300ms ease-in-out;
 }
 
 .back-to-top i {
   padding-top: 1px;
   font-size: 15px;
   color: #fff;
+}
+
+.back-to-top:hover {
+  opacity: 0.9;
+}
+
+.back-to-top.is-active {
+  visibility: visible;
 }
 /* 반응형 디자인 */
 
