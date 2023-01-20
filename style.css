@@ -106,12 +106,12 @@ h6,
   align-items: center;
 }
 
-.nav-list-item button {
+.nav-list-item a {
   padding: 10px 30px 10px 0;
   color: #4e4039;
 }
 
-.nav-list-item button:focus {
+.nav-list-item a:focus {
   color: #eb5d12;
 }
 
@@ -149,7 +149,7 @@ h6,
   margin-top: 20px;
 }
 
-.sidebar-list-item button {
+.sidebar-list-item a {
   display: block;
   padding: 10px 20px;
   font-size: 15px;
@@ -157,7 +157,7 @@ h6,
   transition: opacity 200ms ease-in-out;
 }
 
-.sidebar-list-item button:hover {
+.sidebar-list-item a:hover {
   opacity: 0.4;
 }
 
