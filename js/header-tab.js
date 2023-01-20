@@ -12,7 +12,7 @@ function scrollHeaderTab() {
     behavior: 'smooth',
   })
 
-  if (window.innerWidth < 992) {
+  if (window.innerWidth < 993) {
     sideBar.classList.remove('is-active')
     sideBarOverlay.classList.remove('is-active')
   }
