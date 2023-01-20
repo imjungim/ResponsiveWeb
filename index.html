@@ -53,26 +53,38 @@
               <nav class="md-only">
                 <h2 class="visually-hidden">메뉴</h2>
                 <ul class="nav-list">
-                  <li class="nav-list-item">
-                    <a href="#">Home</a>
+                  <li class="nav-list-item" role="tab" aria-labelledby="hero">
+                    <button>Home</button>
                   </li>
-                  <li class="nav-list-item">
-                    <a href="#">About Us</a>
+                  <li class="nav-list-item" role="tab" aria-labelledby="about">
+                    <button>About Us</button>
                   </li>
-                  <li class="nav-list-item">
-                    <a href="#">Services</a>
+                  <li
+                    class="nav-list-item"
+                    role="tab"
+                    aria-labelledby="service"
+                  >
+                    <button>Services</button>
                   </li>
-                  <li class="nav-list-item">
-                    <a href="#">Portfolio</a>
+                  <li
+                    class="nav-list-item"
+                    role="tab"
+                    aria-labelledby="portfolio"
+                  >
+                    <button>Portfolio</button>
                   </li>
-                  <li class="nav-list-item">
-                    <a href="#">Team</a>
+                  <li class="nav-list-item" role="tab" aria-labelledby="team">
+                    <button>Team</button>
                   </li>
-                  <li class="nav-list-item">
-                    <a href="#">Contact</a>
+                  <li
+                    class="nav-list-item"
+                    role="tab"
+                    aria-labelledby="contact"
+                  >
+                    <button>Contact</button>
                   </li>
-                  <li class="nav-list-item">
-                    <a class="get-started" href="#">Get Started</a>
+                  <li class="nav-list-item" role="tab" aria-labelledby="about">
+                    <button class="get-started">Get Started</button>
                   </li>
                 </ul>
               </nav>
@@ -87,7 +99,7 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section id="hero" class="hero-section" role="tabpanel">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -113,7 +125,7 @@
         </div>
       </section>
 
-      <section class="about-section">
+      <section id="about" class="about-section" role="tabpanel">
         <div class="container">
           <div class="row justify-content-between">
             <div class="col-lg-5">
@@ -159,7 +171,7 @@
         </div>
       </section>
 
-      <section class="service-section">
+      <section id="service" class="service-section" role="tabpanel">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -213,7 +225,7 @@
         </div>
       </section>
 
-      <section class="portfolio-section">
+      <section id="portfolio" class="portfolio-section" role="tabpanel">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -349,7 +361,7 @@
         </div>
       </section>
 
-      <section class="faq-section">
+      <section id="faq" class="faq-section" role="tabpanel">
         <div class="container">
           <div class="section">
             <h1 class="section-title">F.A.Q</h1>
@@ -475,7 +487,7 @@
         </div>
       </section>
 
-      <section class="team-section">
+      <section id="team" class="team-section" role="tabpanel">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -662,7 +674,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section id="contact" class="contact-section" role="tabpanel">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -884,23 +896,23 @@
         <h1 class="visually-hidden">menu</h1>
 
         <ul class="sidebar-list">
-          <li class="sidebar-list-item">
-            <a href="#">Home</a>
+          <li class="sidebar-list-item" role="tab" aria-labelledby="hero">
+            <button>Home</button>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#">About Us</a>
+          <li class="sidebar-list-item" role="tab" aria-labelledby="about">
+            <button>About Us</button>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#">Services</a>
+          <li class="sidebar-list-item" role="tab" aria-labelledby="service">
+            <button>Services</button>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#">Portfolio</a>
+          <li class="sidebar-list-item" role="tab" aria-labelledby="portfolio">
+            <button>Portfolio</button>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#">Team</a>
+          <li class="sidebar-list-item" role="tab" aria-labelledby="team">
+            <button>Team</button>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#">Contact</a>
+          <li class="sidebar-list-item" role="tab" aria-labelledby="contact">
+            <button>Contact</button>
           </li>
         </ul>
       </header>
@@ -916,5 +928,6 @@
     <script src="./js/portfolio-list-tab.js"></script>
     <script src="./js/faq.js"></script>
     <script src="./js/back-to-top.js"></script>
+    <script src="./js/header-tab.js"></script>
   </body>
 </html>
